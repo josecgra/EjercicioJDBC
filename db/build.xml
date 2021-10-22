@@ -1,0 +1,9 @@
+<project name="BD" default="initBD" basedir=".">
+  <target name="initBD">
+    <sql driver="com.mysql.cj.jdbc.Driver" url="jdbc:mysql://localhost:3306/viajes?serverTimezone=UTC" userid="root" password="1234" src="viajes.sql">
+      <classpath>
+        <pathelement location="../lib/mysql-connector-java-8.0.11.jar"/>
+      </classpath>
+    </sql>
+  </target>
+</project>
